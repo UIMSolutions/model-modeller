@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/model-modeller
+model-modeller.so
+model-modeller.dylib
+model-modeller.dll
+model-modeller.a
+model-modeller.lib
+model-modeller-test-*
+*.exe
+*.o
+*.obj
+*.lst

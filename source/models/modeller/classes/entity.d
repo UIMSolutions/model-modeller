@@ -6,14 +6,6 @@ import models.modeller;
 class DMDLEntity : DOOPEntity {
   mixin(OOPEntityThis!("MDLEntity"));
   
-  override string entityClass() { return "MDLEntity"; }
-  override string entityClasses() { return "cmsEntities"; }
-  override string entityPath() { return "cmsEntities"; }
-
-  override void initialize() {
-    super.initialize;
-
-  }
   override DOOPEntity fromRequest(STRINGAA parameters) {
     super.fromRequest(parameters);
     foreach(k, v; [

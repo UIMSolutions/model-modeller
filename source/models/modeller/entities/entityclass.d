@@ -10,8 +10,7 @@ class DMDLEntityClass : DMDLEntity {
     super.initialize;
     
     this
-    .attribute("docu", OOPAttributeUUID)
-    .registerPath("modeller/entityClass"); 
+      .registerPath("modeller_entityclasses"); 
   }
 
   override DOOPEntity clone() { return MDLEntityClass; }

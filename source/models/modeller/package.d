@@ -16,10 +16,3 @@ public import uim.entities;
 public import models.modeller.classes;
 public import models.modeller.entities;
 public import models.modeller.tests;
-
-static this() {
-  uimRegistryEntities
-  .register(MDLAttribute.registerPath, MDLAttribute)
-  .register(MDLAttributeClass.registerPath, MDLAttributeClass)
-  .register(MDLEntityClass.registerPath, MDLEntityClass);
-}

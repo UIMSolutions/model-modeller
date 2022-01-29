@@ -5,13 +5,15 @@ import models.modeller;
 
 class DMDLAttributeClass : DMDLEntity {
   mixin(OOPEntityThis!("MDLAttributeClass"));
-
-  static string namespace = moduleName!DMDLAttributeClass;
-  override string entityPath() { return "cms/demo"; }
-  override string entityClass() { return "MDLAttributeClass"; }
-  override string entityClasses() { return "MDLAttributeClasss"; }  
   
   mixin(SProperty!("UUID", "demo"));
+
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("modeller_attributeclasses");
+  }
 
   override DOOPEntity clone() { return MDLAttributeClass; }
   

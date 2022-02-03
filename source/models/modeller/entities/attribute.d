@@ -12,6 +12,7 @@ class DMDLAttribute : DMDLEntity {
     this
       .attribute("isNullable", OOPBooleanAttribute)
       .attribute("isReadOnly", OOPBooleanAttribute)
+      .attribute("valueConstrainedToList", OOPBooleanAttribute)
       .attribute("dataFormat", OOPStringAttribute)
       .registerPath("modeller_attributes");
   }

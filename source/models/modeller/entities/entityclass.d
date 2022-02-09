@@ -10,6 +10,7 @@ class DMDLEntityClass : DMDLEntity {
     super.initialize;
     
     this
+      .attribute("modelId", OOPUUIDAttribute)
       .registerPath("modeller_entityclasses"); 
   }
 

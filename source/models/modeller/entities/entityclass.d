@@ -11,6 +11,7 @@ class DMDLEntityClass : DMDLEntity {
     
     this
       .attribute("modelId", OOPUUIDAttribute)
+      .attribute("entityClassId", OOPUUIDAttribute)
       .registerPath("modeller_entityclasses"); 
   }
 

@@ -12,6 +12,8 @@ class DMDLAttributeClass : DMDLEntity {
     super.initialize;
 
     this
+      .attribute("modelId", OOPUUIDAttribute)
+      .attribute("attributeClassId", OOPUUIDAttribute)
       .registerPath("modeller_attributeclasses");
   }
 

@@ -10,6 +10,7 @@ class DMDLPackage : DMDLEntity {
     super.initialize;
 
     this
+      .attribute("packageId", OOPUUIDAttribute)
       .registerPath("packageler_packages");
   }
 

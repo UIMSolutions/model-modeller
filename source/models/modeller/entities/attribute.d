@@ -10,6 +10,8 @@ class DMDLAttribute : DMDLEntity {
     super.initialize;
 
     this
+      .attribute("modelId", OOPUUIDAttribute)
+      .attribute("attributeClassId", OOPUUIDAttribute)
       .attribute("isNullable", OOPBooleanAttribute)
       .attribute("isReadOnly", OOPBooleanAttribute)
       .attribute("valueConstrainedToList", OOPBooleanAttribute)

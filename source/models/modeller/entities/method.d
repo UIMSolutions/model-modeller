@@ -10,7 +10,7 @@ class DMDLMethod : DMDLEntity {
     super.initialize;
 
     this
-      .registerPath("methodler_methods");
+      .registerPath("modeller_methods");
   }
 
   override DOOPEntity clone() { return MDLMethod; }

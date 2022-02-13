@@ -6,6 +6,17 @@ import models.modeller;
 class DMDLEntity : DOOPEntity {
   mixin(OOPEntityThis!("MDLEntity"));
   
+  override void initialize() {
+    super.initialize;
+
+    this
+    .attribute("keywords", OOPTagsAttribute) 
+    .attribute("imagePath", OOPStringAttribute)
+    .attribute("summary", OOPStringAttribute)
+    .attribute("text", OOPStringAttribute)
+    .attribute("githubLink", OOPStringAttribute);
+  }
+
   override DOOPEntity fromRequest(STRINGAA parameters) {
     super.fromRequest(parameters);
     foreach(k, v; [

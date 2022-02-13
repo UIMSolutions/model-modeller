@@ -11,7 +11,7 @@ class DMDLPackage : DMDLEntity {
 
     this
       .attribute("packageId", OOPUUIDAttribute)
-      .registerPath("packageler_packages");
+      .registerPath("modeller_packages");
   }
 
   override DOOPEntity clone() { return MDLPackage; }

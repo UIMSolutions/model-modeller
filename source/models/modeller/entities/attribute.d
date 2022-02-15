@@ -18,8 +18,6 @@ class DMDLAttribute : DMDLEntity {
       .attribute("dataFormat", OOPStringAttribute)
       .registerPath("modeller_attributes");
   }
-
-  override DOOPEntity clone() { return MDLAttribute; }
 }
 mixin(OOPEntityCalls!("MDLAttribute"));
 

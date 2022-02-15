@@ -12,8 +12,6 @@ class DMDLMethod : DMDLEntity {
     this
       .registerPath("modeller_methods");
   }
-
-  override DOOPEntity clone() { return MDLMethod; }
 }
 mixin(OOPEntityCalls!("MDLMethod"));
 

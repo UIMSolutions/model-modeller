@@ -12,8 +12,6 @@ class DMDLLibrary : DMDLEntity {
     this
       .registerPath("modeller_libraries");
   }
-
-  override DOOPEntity clone() { return MDLLibrary; }
 }
 mixin(OOPEntityCalls!("MDLLibrary"));
 

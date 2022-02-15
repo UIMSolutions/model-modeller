@@ -17,8 +17,6 @@ class DMDLAttributeClass : DMDLEntity {
       .registerPath("modeller_attributeclasses");
   }
 
-  override DOOPEntity clone() { return MDLAttributeClass; }
-  
   override DOOPEntity fromJson(Json aJson) {
     if (aJson == Json(null)) return this;
     super.fromJson(aJson);

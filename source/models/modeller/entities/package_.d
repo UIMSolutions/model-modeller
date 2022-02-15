@@ -13,8 +13,6 @@ class DMDLPackage : DMDLEntity {
       .attribute("packageId", OOPUUIDAttribute)
       .registerPath("modeller_packages");
   }
-
-  override DOOPEntity clone() { return MDLPackage; }
 }
 mixin(OOPEntityCalls!("MDLPackage"));
 

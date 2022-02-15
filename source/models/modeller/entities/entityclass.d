@@ -14,8 +14,6 @@ class DMDLEntityClass : DMDLEntity {
       .attribute("entityClassId", OOPUUIDAttribute)
       .registerPath("modeller_entityclasses"); 
   }
-
-  override DOOPEntity clone() { return MDLEntityClass; }
 }
 mixin(OOPEntityCalls!("MDLEntityClass"));
 

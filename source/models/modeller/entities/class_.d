@@ -10,6 +10,7 @@ class DMDLClass : DMDLEntity {
     super.initialize;
 
     this
+      .attribute("libraryId", OOPUUIDAttribute)
       .registerPath("modeller_classes");
   }
 }

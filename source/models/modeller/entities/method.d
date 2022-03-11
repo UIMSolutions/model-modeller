@@ -10,6 +10,7 @@ class DMDLMethod : DMDLEntity {
     super.initialize;
 
     this
+      .attribute("libraryId", OOPUUIDAttribute)
       .registerPath("modeller_methods");
   }
 }

@@ -11,6 +11,7 @@ class DMDLAttribute : DMDLEntity {
 
     this
       .attribute("modelId", OOPUUIDAttribute)
+      .attribute("libraryId", OOPUUIDAttribute)
       .attribute("attributeClassId", OOPUUIDAttribute)
       .attribute("isNullable", OOPBooleanAttribute)
       .attribute("isReadOnly", OOPBooleanAttribute)

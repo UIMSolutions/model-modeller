@@ -13,7 +13,7 @@ class DMDLEntityClass : DMDLEntity {
       .attribute("modelId", OOPUUIDAttribute)
       .attribute("entityClassId", OOPUUIDAttribute)
       .attribute("className", OOPStringAttribute)
-      .attribute("gitHub", OOPStringAttribute)
+      .attribute("libraryId", OOPUUIDAttribute)
       .attribute("attributes", OOPStringArrayAttribute)
       .registerPath("modeller_entityclasses"); 
   }

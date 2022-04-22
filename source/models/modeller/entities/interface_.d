@@ -10,6 +10,7 @@ class DMDLInterface : DMDLEntity {
     super.initialize;
 
     this
+      .attribute("libraryId", OOPUUIDAttribute)
       .registerPath("modeller_interfaces");
   }
 }

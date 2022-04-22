@@ -19,7 +19,7 @@ public import models.modeller.entities.module_;
 public import models.modeller.entities.package_;
 
 static this() {
-  uimEntityRegistry
+  EntityRegistry
   .register(MDLApi, MDLApp, MDLAttribute, MDLAttributeClass, MDLClass, MDLComponent, MDLEntityClass, MDLFunction, 
     MDLInterface, MDLLibrary, MDLMethod, MDLModel, MDLModule, MDLPackage);
 }

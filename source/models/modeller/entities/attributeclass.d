@@ -13,6 +13,7 @@ class DMDLAttributeClass : DMDLEntity {
 
     this
       .attribute("modelId", OOPUUIDAttribute)
+      .attribute("libraryId", OOPUUIDAttribute)
       .attribute("attributeClassId", OOPUUIDAttribute)
       .registerPath("modeller_attributeclasses");
   }

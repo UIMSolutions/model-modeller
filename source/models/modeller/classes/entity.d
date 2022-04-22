@@ -14,6 +14,8 @@ class DMDLEntity : DOOPEntity {
     .attribute("imagePath", OOPStringAttribute)
     .attribute("summary", OOPStringAttribute)
     .attribute("text", OOPStringAttribute)
+    .attribute("mainTitle", OOPStringAttribute)
+    .attribute("subTitle", OOPStringAttribute)
     .attribute("githubLink", OOPStringAttribute);
   }
 
@@ -23,6 +25,7 @@ class DMDLEntity : DOOPEntity {
       "entity_imagepath":"imagePath", 
       "entity_isindex":"isIndex", 
       "entity_maintitle":"mainTitle", 
+      "entity_keywords":"keywords", 
       "entity_subtitle":"subTitle", 
       "entity_summary":"summary", 
       "entity_text":"text"]) {

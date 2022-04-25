@@ -4,7 +4,7 @@ module models.modeller.entities.app;
 import models.modeller;
 
 class DMDLApp : DMDLEntity {
-  mixin(OOPEntityThis!("MDLApp"));
+  mixin(EntityThis!("MDLApp"));
   
   override void initialize() {
     super.initialize;
@@ -13,5 +13,5 @@ class DMDLApp : DMDLEntity {
       .registerPath("modeller_apps");
   }
 }
-mixin(OOPEntityCalls!("MDLApp"));
+mixin(EntityCalls!("MDLApp"));
 

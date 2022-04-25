@@ -4,7 +4,7 @@ module models.modeller.entities.package_;
 import models.modeller;
 
 class DMDLPackage : DMDLEntity {
-  mixin(OOPEntityThis!("MDLPackage"));
+  mixin(EntityThis!("MDLPackage"));
   
   override void initialize() {
     super.initialize;
@@ -15,5 +15,5 @@ class DMDLPackage : DMDLEntity {
       .registerPath("modeller_packages");
   }
 }
-mixin(OOPEntityCalls!("MDLPackage"));
+mixin(EntityCalls!("MDLPackage"));
 

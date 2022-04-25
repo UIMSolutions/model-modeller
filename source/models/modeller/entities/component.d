@@ -4,7 +4,7 @@ module models.modeller.entities.component;
 import models.modeller;
 
 class DMDLComponent : DMDLEntity {
-  mixin(OOPEntityThis!("MDLComponent"));
+  mixin(EntityThis!("MDLComponent"));
   
   override void initialize() {
     super.initialize;
@@ -16,5 +16,5 @@ class DMDLComponent : DMDLEntity {
       .registerPath("modeller_components");
   }
 }
-mixin(OOPEntityCalls!("MDLComponent"));
+mixin(EntityCalls!("MDLComponent"));
 

@@ -4,7 +4,7 @@ module models.modeller.entities.interface_;
 import models.modeller;
 
 class DMDLInterface : DMDLEntity {
-  mixin(OOPEntityThis!("MDLInterface"));
+  mixin(EntityThis!("MDLInterface"));
   
   override void initialize() {
     super.initialize;
@@ -14,5 +14,5 @@ class DMDLInterface : DMDLEntity {
       .registerPath("modeller_interfaces");
   }
 }
-mixin(OOPEntityCalls!("MDLInterface"));
+mixin(EntityCalls!("MDLInterface"));
 

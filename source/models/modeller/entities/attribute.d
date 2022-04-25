@@ -4,7 +4,7 @@ module models.modeller.entities.attribute;
 import models.modeller;
 
 class DMDLAttribute : DMDLEntity {
-  mixin(OOPEntityThis!("MDLAttribute"));
+  mixin(EntityThis!("MDLAttribute"));
   
   override void initialize() {
     super.initialize;
@@ -20,5 +20,5 @@ class DMDLAttribute : DMDLEntity {
       .registerPath("modeller_attributes");
   }
 }
-mixin(OOPEntityCalls!("MDLAttribute"));
+mixin(EntityCalls!("MDLAttribute"));
 

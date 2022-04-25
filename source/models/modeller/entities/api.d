@@ -4,7 +4,7 @@ module models.modeller.entities.api;
 import models.modeller;
 
 class DMDLApi : DMDLEntity {
-  mixin(OOPEntityThis!("MDLApi"));
+  mixin(EntityThis!("MDLApi"));
   
   override void initialize() {
     super.initialize;
@@ -13,5 +13,5 @@ class DMDLApi : DMDLEntity {
       .registerPath("modeller_apis");
   }
 }
-mixin(OOPEntityCalls!("MDLApi"));
+mixin(EntityCalls!("MDLApi"));
 

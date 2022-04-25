@@ -4,7 +4,7 @@ module models.modeller.classes.entity;
 import models.modeller;
 
 class DMDLEntity : DOOPEntity {
-  mixin(OOPEntityThis!("MDLEntity"));
+  mixin(EntityThis!("MDLEntity"));
   
   override void initialize() {
     super.initialize;

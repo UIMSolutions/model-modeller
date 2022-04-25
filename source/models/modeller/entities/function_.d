@@ -4,7 +4,7 @@ module models.modeller.entities.function_;
 import models.modeller;
 
 class DMDLFunction : DMDLEntity {
-  mixin(OOPEntityThis!("MDLFunction"));
+  mixin(EntityThis!("MDLFunction"));
   
   override void initialize() {
     super.initialize;
@@ -14,5 +14,5 @@ class DMDLFunction : DMDLEntity {
       .registerPath("modeller_functions");
   }
 }
-mixin(OOPEntityCalls!("MDLFunction"));
+mixin(EntityCalls!("MDLFunction"));
 

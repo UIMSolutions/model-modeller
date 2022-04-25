@@ -4,7 +4,7 @@ module models.modeller.entities.library;
 import models.modeller;
 
 class DMDLLibrary : DMDLEntity {
-  mixin(OOPEntityThis!("MDLLibrary"));
+  mixin(EntityThis!("MDLLibrary"));
   
   override void initialize() {
     super.initialize;
@@ -13,5 +13,5 @@ class DMDLLibrary : DMDLEntity {
       .registerPath("modeller_libraries");
   }
 }
-mixin(OOPEntityCalls!("MDLLibrary"));
+mixin(EntityCalls!("MDLLibrary"));
 

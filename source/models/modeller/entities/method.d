@@ -4,7 +4,7 @@ module models.modeller.entities.method;
 import models.modeller;
 
 class DMDLMethod : DMDLEntity {
-  mixin(OOPEntityThis!("MDLMethod"));
+  mixin(EntityThis!("MDLMethod"));
   
   override void initialize() {
     super.initialize;
@@ -14,5 +14,5 @@ class DMDLMethod : DMDLEntity {
       .registerPath("modeller_methods");
   }
 }
-mixin(OOPEntityCalls!("MDLMethod"));
+mixin(EntityCalls!("MDLMethod"));
 

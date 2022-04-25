@@ -4,7 +4,7 @@ module models.modeller.entities.attributeclass;
 import models.modeller;
 
 class DMDLAttributeClass : DMDLEntity {
-  mixin(OOPEntityThis!("MDLAttributeClass"));
+  mixin(EntityThis!("MDLAttributeClass"));
   
   mixin(SProperty!("UUID", "demo"));
 
@@ -46,6 +46,6 @@ class DMDLAttributeClass : DMDLEntity {
     return result;
   }
 }
-mixin(OOPEntityCalls!("MDLAttributeClass"));
+mixin(EntityCalls!("MDLAttributeClass"));
 
 

@@ -4,7 +4,7 @@ module models.modeller.entities.class_;
 import models.modeller;
 
 class DMDLClass : DMDLEntity {
-  mixin(OOPEntityThis!("MDLClass"));
+  mixin(EntityThis!("MDLClass"));
   
   override void initialize() {
     super.initialize;
@@ -14,5 +14,5 @@ class DMDLClass : DMDLEntity {
       .registerPath("modeller_classes");
   }
 }
-mixin(OOPEntityCalls!("MDLClass"));
+mixin(EntityCalls!("MDLClass"));
 

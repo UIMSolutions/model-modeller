@@ -11,12 +11,14 @@ class DMDLEntity : DOOPEntity {
 
     this
     .attribute("keywords", OOPTagsAttribute) 
-    .attribute("imagePath", OOPStringAttribute)
-    .attribute("summary", OOPStringAttribute)
-    .attribute("text", OOPStringAttribute)
-    .attribute("mainTitle", OOPStringAttribute)
-    .attribute("subTitle", OOPStringAttribute)
-    .attribute("githubLink", OOPStringAttribute);
+    .addValues([
+      "summary": StringAttributeClass,
+      "imagePath": StringAttributeClass,
+      "text": StringAttributeClass,
+      "githubLink": StringAttributeClass,
+      "mainTitle": StringAttributeClass,
+      "subTitle":  StringAttributeClass
+    ]);
   }
 
   override DOOPEntity fromRequest(STRINGAA parameters) {

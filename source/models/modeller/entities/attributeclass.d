@@ -12,9 +12,10 @@ class DMDLAttributeClass : DMDLEntity {
     super.initialize;
 
     this
-      .attribute("modelId", OOPUUIDAttribute)
-      .attribute("libraryId", OOPUUIDAttribute)
-      .attribute("attributeClassId", OOPUUIDAttribute)
+      .addValues([
+        "libraryId": UUIDAttributeClass,
+        "attributeClassId": UUIDAttributeClass
+      ])
       .registerPath("modeller_attributeclasses");
   }
 

@@ -10,11 +10,14 @@ class DMDLEntityClass : DMDLEntity {
     super.initialize;
     
     this
-      .attribute("modelId", OOPUUIDAttribute)
-      .attribute("entityClassId", OOPUUIDAttribute)
-      .attribute("className", OOPStringAttribute)
-      .attribute("libraryId", OOPUUIDAttribute)
-      .attribute("attributes", OOPStringArrayAttribute)
+      .addValues([
+        "modelId": UUIDAttributeClass,
+        "entityClassId": UUIDAttributeClass,
+        "libraryId": UUIDAttributeClass,
+        "modelId": UUIDAttributeClass,
+        "className": StringAttributeClass/* ,
+        "attributes": StringArrayAttributeClass */
+      ])
       .registerPath("modeller_entityclasses"); 
   }
 }

@@ -10,9 +10,11 @@ class DMDLComponent : DMDLEntity {
     super.initialize;
 
     this
-      .attribute("moduleId", OOPUUIDAttribute)
-      .attribute("entityClassId", OOPUUIDAttribute)
-      .attribute("gitHub", OOPStringAttribute)
+      .addValues([
+        "moduleId": UUIDAttributeClass,
+        "entityClassId": UUIDAttributeClass,
+        "gitHub": StringAttributeClass
+      ])
       .registerPath("modeller_components");
   }
 }

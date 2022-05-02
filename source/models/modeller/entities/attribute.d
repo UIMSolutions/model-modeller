@@ -10,13 +10,17 @@ class DMDLAttribute : DMDLEntity {
     super.initialize;
 
     this
-      .attribute("modelId", OOPUUIDAttribute)
-      .attribute("libraryId", OOPUUIDAttribute)
-      .attribute("attributeClassId", OOPUUIDAttribute)
-      .attribute("isNullable", OOPBooleanAttribute)
-      .attribute("isReadOnly", OOPBooleanAttribute)
-      .attribute("valueConstrainedToList", OOPBooleanAttribute)
-      .attribute("dataFormat", OOPStringAttribute)
+      .addValues([
+        "isNullable": BooleanAttributeClass,
+        "isReadOnly": BooleanAttributeClass,
+        "valueConstrainedToList": BooleanAttributeClass,
+        "modelId": UUIDAttributeClass,
+        "moduleId": UUIDAttributeClass,
+        "packageId": UUIDAttributeClass,
+        "libraryId": UUIDAttributeClass,
+        "attributeClassId": UUIDAttributeClass,        
+        "dataFormat": StringAttributeClass
+      ])
       .registerPath("modeller_attributes");
   }
 }

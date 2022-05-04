@@ -3,7 +3,7 @@ module models.modeller.entities.api;
 @safe:
 import models.modeller;
 
-class DMDLApi : DMDLEntity {
+class DMDLApi : DMDLObj {
   mixin(EntityThis!("MDLApi"));
   
   override void initialize() {

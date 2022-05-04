@@ -3,7 +3,7 @@ module models.modeller.entities.attribute;
 @safe:
 import models.modeller;
 
-class DMDLAttribute : DMDLEntity {
+class DMDLAttribute : DMDLObj {
   mixin(EntityThis!("MDLAttribute"));
   
   override void initialize() {
@@ -11,15 +11,15 @@ class DMDLAttribute : DMDLEntity {
 
     this
       .addValues([
-        "isNullable": BooleanAttributeClass,
-        "isReadOnly": BooleanAttributeClass,
-        "valueConstrainedToList": BooleanAttributeClass,
-        "modelId": UUIDAttributeClass,
-        "moduleId": UUIDAttributeClass,
-        "packageId": UUIDAttributeClass,
-        "libraryId": UUIDAttributeClass,
-        "attributeClassId": UUIDAttributeClass,        
-        "dataFormat": StringAttributeClass
+        "isNullable": BooleanAttribute,
+        "isReadOnly": BooleanAttribute,
+        "valueConstrainedToList": BooleanAttribute,
+        "modelId": UUIDAttribute,
+        "moduleId": UUIDAttribute,
+        "packageId": UUIDAttribute,
+        "libraryId": UUIDAttribute,
+        "attributeId": UUIDAttribute,        
+        "dataFormat": StringAttribute
       ])
       .registerPath("modeller_attributes");
   }

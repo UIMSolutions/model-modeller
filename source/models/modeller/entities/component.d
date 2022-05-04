@@ -3,7 +3,7 @@ module models.modeller.entities.component;
 @safe:
 import models.modeller;
 
-class DMDLComponent : DMDLEntity {
+class DMDLComponent : DMDLObj {
   mixin(EntityThis!("MDLComponent"));
   
   override void initialize() {
@@ -11,9 +11,9 @@ class DMDLComponent : DMDLEntity {
 
     this
       .addValues([
-        "moduleId": UUIDAttributeClass,
-        "entityClassId": UUIDAttributeClass,
-        "gitHub": StringAttributeClass
+        "moduleId": UUIDAttribute,
+        "entityClassId": UUIDAttribute,
+        "gitHub": StringAttribute
       ])
       .registerPath("modeller_components");
   }

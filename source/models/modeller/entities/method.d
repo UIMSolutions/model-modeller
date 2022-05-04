@@ -3,7 +3,7 @@ module models.modeller.entities.method;
 @safe:
 import models.modeller;
 
-class DMDLMethod : DMDLEntity {
+class DMDLMethod : DMDLObj {
   mixin(EntityThis!("MDLMethod"));
   
   override void initialize() {
@@ -11,7 +11,7 @@ class DMDLMethod : DMDLEntity {
 
     this
       .addValues([
-        "libraryId": UUIDAttributeClass
+        "libraryId": UUIDAttribute
       ])
       .registerPath("modeller_methods");
   }

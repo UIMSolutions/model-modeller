@@ -3,7 +3,7 @@ module models.modeller.entities.interface_;
 @safe:
 import models.modeller;
 
-class DMDLInterface : DMDLEntity {
+class DMDLInterface : DMDLObj {
   mixin(EntityThis!("MDLInterface"));
   
   override void initialize() {
@@ -11,9 +11,9 @@ class DMDLInterface : DMDLEntity {
 
     this
       .addValues([
-        "libraryId": UUIDAttributeClass,
-        "moduleId": UUIDAttributeClass,
-        "packageId": UUIDAttributeClass
+        "libraryId": UUIDAttribute,
+        "moduleId": UUIDAttribute,
+        "packageId": UUIDAttribute
       ])
       .registerPath("modeller_interfaces");
   }

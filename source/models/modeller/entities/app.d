@@ -3,7 +3,7 @@ module models.modeller.entities.app;
 @safe:
 import models.modeller;
 
-class DMDLApp : DMDLEntity {
+class DMDLApp : DMDLObj {
   mixin(EntityThis!("MDLApp"));
   
   override void initialize() {

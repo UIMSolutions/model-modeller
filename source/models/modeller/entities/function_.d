@@ -3,7 +3,7 @@ module models.modeller.entities.function_;
 @safe:
 import models.modeller;
 
-class DMDLFunction : DMDLEntity {
+class DMDLFunction : DMDLObj {
   mixin(EntityThis!("MDLFunction"));
   
   override void initialize() {
@@ -11,9 +11,9 @@ class DMDLFunction : DMDLEntity {
 
     this
       .addValues([
-        "libraryId": UUIDAttributeClass,
-        "moduleId": UUIDAttributeClass,
-        "packageId": UUIDAttributeClass
+        "libraryId": UUIDAttribute,
+        "moduleId": UUIDAttribute,
+        "packageId": UUIDAttribute
       ])
       .registerPath("modeller_functions");
   }

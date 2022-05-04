@@ -3,7 +3,7 @@ module models.modeller.entities.library;
 @safe:
 import models.modeller;
 
-class DMDLLibrary : DMDLEntity {
+class DMDLLibrary : DMDLObj {
   mixin(EntityThis!("MDLLibrary"));
   
   override void initialize() {

@@ -1,0 +1,26 @@
+module models.modeller.entities.entity;
+
+@safe:
+import models.modeller;
+
+class DMDLEntity : DMDLObj {
+  mixin(EntityThis!("MDLEntity"));
+
+  override void initialize() {
+    super.initialize;
+    
+    this
+      .addValues([
+        "modelId": UUIDAttribute,
+        "entityClassId": UUIDAttribute,
+        "libraryId": UUIDAttribute,
+        "modelId": UUIDAttribute,
+        "className": StringAttribute/* ,
+        "attributes": StringArrayAttribute */
+      ])
+      .registerPath("modeller_entities"); 
+  }
+}
+mixin(EntityCalls!("MDLEntity"));
+
+

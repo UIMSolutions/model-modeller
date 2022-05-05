@@ -15,6 +15,8 @@ class DMDLEntity : DMDLObj {
         "entityClassId": UUIDAttribute,
         "libraryId": UUIDAttribute,
         "modelId": UUIDAttribute,
+        "moduleId": UUIDAttribute,
+        "packageId": UUIDAttribute,
         "className": StringAttribute/* ,
         "attributes": StringArrayAttribute */
       ])

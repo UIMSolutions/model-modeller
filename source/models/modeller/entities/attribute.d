@@ -14,6 +14,7 @@ class DMDLAttribute : DMDLObj {
         "isNullable": BooleanAttribute,
         "isReadOnly": BooleanAttribute,
         "valueConstrainedToList": BooleanAttribute,
+        "attributeId": UUIDAttribute,
         "modelId": UUIDAttribute,
         "moduleId": UUIDAttribute,
         "packageId": UUIDAttribute,

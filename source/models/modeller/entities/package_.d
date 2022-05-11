@@ -19,3 +19,17 @@ class DMDLPackage : DMDLObj {
 }
 mixin(EntityCalls!("MDLPackage"));
 
+auto packageById(string id, DMDLPackage[] packages) {
+  foreach(pack; packages) { if (id == pack["id"]) return pack; }
+  return null;
+}
+
+bool isSubPackageOf(DMDLPackage aPackage, DMDLPackage thePackage, DMDLPackage[] packages) {
+  if (thePackage["id"] == aPackage["packageId"]) return true;
+
+  if (auto superPackage = packageById(aPackage["packageId"], packages)) {
+    return superPackage.isSubPackageOf(thePackage, packages);
+  } 
+
+  return false;
+}

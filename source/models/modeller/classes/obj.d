@@ -11,7 +11,7 @@ class DMDLObj : DOOPObj {
 
     this
     .addValues([
-      "keywords": TagArrayAttribute, 
+      "keywords": TagsAttribute, 
       "summary": StringAttribute,
       "imagePath": StringAttribute,
       "text": StringAttribute,

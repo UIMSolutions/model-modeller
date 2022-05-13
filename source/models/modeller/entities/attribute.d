@@ -19,8 +19,7 @@ class DMDLAttribute : DMDLObj {
         "moduleId": UUIDAttribute,
         "packageId": UUIDAttribute,
         "libraryId": UUIDAttribute,
-        "attributeId": UUIDAttribute,        
-        "dataFormat": StringAttribute
+        "dataFormats": StringAttribute
       ])
       .registerPath("modeller_attributes");
   }

@@ -15,3 +15,8 @@ class DMDLApi : DMDLObj {
 }
 mixin(EntityCalls!("MDLApi"));
 
+version(test_model_cms) {
+  unittest{
+    // TODO - Add tests
+  }
+}

@@ -26,3 +26,14 @@ class DMDLAttribute : DMDLObj {
 }
 mixin(EntityCalls!("MDLAttribute"));
 
+version(test_model_cms) {
+  unittest{
+    // TODO - Add tests
+  }
+}
+
+version(generate_json) {
+  static this() {
+    // TODO
+  }
+}

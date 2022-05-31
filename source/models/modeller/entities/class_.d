@@ -18,3 +18,14 @@ class DMDLClass : DMDLObj {
 }
 mixin(EntityCalls!("MDLClass"));
 
+version(test_model_cms) {
+  unittest{
+    // TODO - Add tests
+  }
+}
+
+version(generate_json) {
+  static this() {
+    // TODO
+  }
+}

@@ -1,10 +1,10 @@
-module models.modeller.entities.component;
+module models.modeller.entities.control;
 
 @safe:
 import models.modeller;
 
-class DMDLComponent : DMDLObj {
-  mixin(EntityThis!("MDLComponent"));
+class DMDLControl : DMDLObj {
+  mixin(EntityThis!("MDLControl"));
   
   override void initialize() {
     super.initialize;
@@ -15,10 +15,10 @@ class DMDLComponent : DMDLObj {
         "entityClassId": UUIDAttribute,
         "gitHub": StringAttribute
       ])
-      .registerPath("modeller_components");
+      .registerPath("modeller_controls");
   }
 }
-mixin(EntityCalls!("MDLComponent"));
+mixin(EntityCalls!("MDLControl"));
 
 version(test_model_modeller) {
   unittest{

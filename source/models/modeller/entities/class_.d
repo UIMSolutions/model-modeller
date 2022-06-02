@@ -18,7 +18,7 @@ class DMDLClass : DMDLObj {
 }
 mixin(EntityCalls!("MDLClass"));
 
-version(test_model_cms) {
+version(test_model_modeller) {
   unittest{
     // TODO - Add tests
   }

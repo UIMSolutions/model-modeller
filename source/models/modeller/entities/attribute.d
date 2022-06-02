@@ -26,7 +26,7 @@ class DMDLAttribute : DMDLObj {
 }
 mixin(EntityCalls!("MDLAttribute"));
 
-version(test_model_cms) {
+version(test_model_modeller) {
   unittest{
     // TODO - Add tests
   }

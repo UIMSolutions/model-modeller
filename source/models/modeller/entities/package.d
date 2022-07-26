@@ -9,6 +9,7 @@ public import models.modeller.entities.attribute;
 public import models.modeller.entities.class_;
 public import models.modeller.entities.component;
 public import models.modeller.entities.control;
+public import models.modeller.entities.element;
 public import models.modeller.entities.entity;
 public import models.modeller.entities.function_;
 public import models.modeller.entities.interface_;

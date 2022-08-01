@@ -28,7 +28,11 @@ mixin(EntityCalls!("MDLAttribute"));
 
 version(test_model_modeller) {
   unittest{
-    // TODO - Add tests
+    assert(MDLAttribute);
+
+    auto entity = MDLAttribute;
+    testEntityStringAttributes(entity, [  "dataFormats"]);
+    testEntityUUIDAttributes(entity, ["attributeId", "modelId", "moduleId", "packageId", "libraryId"]);
   }
 }
 

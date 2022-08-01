@@ -13,6 +13,7 @@ class DMDLControl : DMDLObj {
       .addValues([
         "libraryId": UUIDAttribute,
         "moduleId": UUIDAttribute,
+        "category": StringAttribute,
         "gitHub": StringAttribute
       ])
       .registerPath("modeller_controls");
@@ -22,7 +23,11 @@ mixin(EntityCalls!("MDLControl"));
 
 version(test_model_modeller) {
   unittest{
-    // TODO - Add tests
+    assert(MDLControl);
+
+    auto entity = MDLControl;
+    testEntityStringAttributes(entity, ["category", "gitHub"]);
+    testEntityUUIDAttributes(entity, ["libraryId", "moduleId"]);
   }
 }
 

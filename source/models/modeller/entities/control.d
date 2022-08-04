@@ -14,7 +14,6 @@ class DMDLControl : DMDLObj {
         "libraryId": UUIDAttribute,
         "moduleId": UUIDAttribute,
         "category": StringAttribute,
-        "gitHub": StringAttribute
       ])
       .registerPath("modeller_controls");
   }

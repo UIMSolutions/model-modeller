@@ -7,7 +7,7 @@ class DMDLFunction : DMDLObj {
   mixin(EntityThis!("MDLFunction"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

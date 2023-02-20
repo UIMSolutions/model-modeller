@@ -7,7 +7,7 @@ class DMDLInterface : DMDLObj {
   mixin(EntityThis!("MDLInterface"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

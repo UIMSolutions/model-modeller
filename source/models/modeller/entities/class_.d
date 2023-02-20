@@ -7,7 +7,7 @@ class DMDLClass : DMDLObj {
   mixin(EntityThis!("MDLClass"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

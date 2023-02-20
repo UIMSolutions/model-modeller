@@ -7,7 +7,7 @@ class DMDLApp : DMDLObj {
   mixin(EntityThis!("MDLApp"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .registerPath("modeller_apps");

@@ -6,7 +6,7 @@ import models.modeller;
 class DMDLObj : DOOPObj {
   mixin(EntityThis!("MDLObj"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

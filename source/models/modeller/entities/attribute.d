@@ -6,7 +6,7 @@ import models.modeller;
 class DMDLAttribute : DMDLObj {
   mixin(EntityThis!("MDLAttribute"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

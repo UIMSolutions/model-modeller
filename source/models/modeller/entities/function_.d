@@ -6,7 +6,7 @@ import models.modeller;
 class DMDLFunction : DMDLObj {
   mixin(EntityThis!("MDLFunction"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -13,7 +13,12 @@ public import uim.entities;
 
 // public import uim.models;
 
-public import models.modeller.attributes;
-public import models.modeller.classes;
-public import models.modeller.entities;
-public import models.modeller.tests;
+public {
+import models.modeller.attributes;
+ import models.modeller.classes;
+ import models.modeller.elements;
+import models.modeller.entities;
+ import models.modeller.tests;
+import models.modeller.usecases;
+import models.modeller.values;
+}
